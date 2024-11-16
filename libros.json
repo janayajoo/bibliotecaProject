@@ -1,0 +1,44 @@
+[
+    {
+        "titulo": "aa",
+        "autor": "a",
+        "genero": "a",
+        "anio_publicacion": 1,
+        "isbn": "1234"
+    },
+    {
+        "titulo": "asas",
+        "autor": "as",
+        "genero": "as",
+        "anio_publicacion": 23,
+        "isbn": "123"
+    },
+    {
+        "titulo": "dsw",
+        "autor": "dewf",
+        "genero": "fdsw",
+        "anio_publicacion": 123,
+        "isbn": "111"
+    },
+    {
+        "titulo": "a",
+        "autor": "a",
+        "genero": "a",
+        "anio_publicacion": 1233,
+        "isbn": "1"
+    },
+    {
+        "titulo": "ar",
+        "autor": "arr",
+        "genero": "ar",
+        "anio_publicacion": 5677,
+        "isbn": "567"
+    },
+    {
+        "titulo": "rey leon",
+        "autor": "autor rey leon",
+        "genero": "fantasia",
+        "anio_publicacion": 1990,
+        "isbn": "11111111"
+    }
+]
