@@ -175,6 +175,6 @@ class ArbolNArio:
     # Alias para mantener compatibilidad
 
 
-def crear_arbol_desde_genero(self, genero):
-    return self.crear_estructura_desde_genero(genero)
+    def crear_arbol_desde_genero(self, genero):
+        return self.crear_estructura_desde_genero(genero)
 #comentario

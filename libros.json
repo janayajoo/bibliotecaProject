@@ -1,86 +1,107 @@
 [
     {
-        "titulo": "la reina de nada ",
-        "autor": "autor",
-        "genero": "genero",
-        "anio_publicacion": 12345,
-        "isbn": "3"
+        "titulo": "Cien años de soledad",
+        "autor": "Gabriel García Márquez",
+        "genero": "Realismo mágico",
+        "anio_publicacion": 1967,
+        "isbn": "978-3-16-148410-0"
     },
     {
-        "titulo": "ejemplo",
-        "autor": "autor",
-        "genero": "genero",
-        "anio_publicacion": 12345,
-        "isbn": "4"
-    },
-    {
-        "titulo": "principe cruel",
-        "autor": "autor",
-        "genero": "genero",
-        "anio_publicacion": 12345,
-        "isbn": "5"
-    },
-    {
-        "titulo": "vajda",
-        "autor": "carolina andujar ",
-        "genero": "misterio",
-        "anio_publicacion": 2016,
-        "isbn": "123"
-    },
-    {
-        "titulo": "al rumbo voy",
-        "autor": "autor",
-        "genero": "genero",
-        "anio_publicacion": 12345,
-        "isbn": "124"
-    },
-    {
-        "titulo": "murcielaof",
-        "autor": "autor",
-        "genero": "genero",
-        "anio_publicacion": 12345,
-        "isbn": "125"
-    },
-    {
-        "titulo": "s",
-        "autor": "autor",
-        "genero": "Romantico",
-        "anio_publicacion": 123,
-        "isbn": "12"
-    },
-    {
-        "titulo": "sa",
-        "autor": "autor",
-        "genero": "Aventura",
-        "anio_publicacion": 12,
-        "isbn": "315"
-    },
-    {
-        "titulo": "intento ",
-        "autor": "autor",
+        "titulo": "1984",
+        "autor": "George Orwell",
         "genero": "Distopía",
-        "anio_publicacion": 25,
-        "isbn": "1256"
+        "anio_publicacion": 1949,
+        "isbn": "978-0-452-28423-4"
     },
     {
-        "titulo": "ada",
-        "autor": "kjnak",
-        "genero": "Humor Negro",
-        "anio_publicacion": 125,
-        "isbn": "1263"
+        "titulo": "Matar a un ruiseñor",
+        "autor": "Harper Lee",
+        "genero": "Ficción",
+        "anio_publicacion": 1960,
+        "isbn": "978-0-06-112008-4"
     },
     {
-        "titulo": "dasda",
-        "autor": "autor",
-        "genero": "Satírica",
-        "anio_publicacion": 12,
-        "isbn": "88"
+        "titulo": "Don Quijote de la Mancha",
+        "autor": "Miguel de Cervantes",
+        "genero": "Novela",
+        "anio_publicacion": 1605,
+        "isbn": "978-84-376-0494-7"
     },
     {
-        "titulo": "Hola",
-        "autor": "autor",
-        "genero": "genero",
-        "anio_publicacion": 12345,
-        "isbn": "0"
+        "titulo": "El gran Gatsby",
+        "autor": "F. Scott Fitzgerald",
+        "genero": "Ficción",
+        "anio_publicacion": 1925,
+        "isbn": "978-0-7432-7356-5"
+    },
+    {
+        "titulo": "La sombra del viento",
+        "autor": "Carlos Ruiz Zafón",
+        "genero": "Ficción histórica",
+        "anio_publicacion": 2001,
+        "isbn": "978-0-06-089871-1"
+    },
+    {
+        "titulo": "Orgullo y prejuicio",
+        "autor": "Jane Austen",
+        "genero": "Romántico",
+        "anio_publicacion": 1813,
+        "isbn": "978-0-19-953556-9"
+    },
+    {
+        "titulo": "El código Da Vinci",
+        "autor": "Dan Brown",
+        "genero": "Thriller",
+        "anio_publicacion": 2003,
+        "isbn": "978-0-385-50420-8"
+    },
+    {
+        "titulo": "Harry Potter y la piedra filosofal",
+        "autor": "J.K. Rowling",
+        "genero": "Fantasía",
+        "anio_publicacion": 1997,
+        "isbn": "978-0-7475-3269-9"
+    },
+    {
+        "titulo": "Los pilares de la Tierra",
+        "autor": "Ken Follett",
+        "genero": "Histórica",
+        "anio_publicacion": 1989,
+        "isbn": "978-0-451-19147-7"
+    },
+    {
+        "titulo": "Crónica de una muerte anunciada",
+        "autor": "Gabriel García Márquez",
+        "genero": "Ficción",
+        "anio_publicacion": 1981,
+        "isbn": "978-0-06-088328-1"
+    },
+    {
+        "titulo": "El alquimista",
+        "autor": "Paulo Coelho",
+        "genero": "Ficción filosófica",
+        "anio_publicacion": 1988,
+        "isbn": "978-0-06-112241-5"
+    },
+    {
+        "titulo": "Cumbres borrascosas",
+        "autor": "Emily Brontë",
+        "genero": "Gótico",
+        "anio_publicacion": 1847,
+        "isbn": "978-0-14-143955-6"
+    },
+    {
+        "titulo": "Fahrenheit 451",
+        "autor": "Ray Bradbury",
+        "genero": "Ciencia ficción",
+        "anio_publicacion": 1953,
+        "isbn": "978-0-345-34296-3"
+    },
+    {
+        "titulo": "El retrato de Dorian Gray",
+        "autor": "Oscar Wilde",
+        "genero": "Ficción psicológica",
+        "anio_publicacion": 1890,
+        "isbn": "978-0-14-143957-0"
     }
 ]
