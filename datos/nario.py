@@ -173,5 +173,8 @@ class ArbolNArio:
         return len(self.todos_los_libros) == 0
 
     # Alias para mantener compatibilidad
-    def crear_arbol_desde_genero(self, genero):
-        return self.crear_estructura_desde_genero(genero)
+
+
+def crear_arbol_desde_genero(self, genero):
+    return self.crear_estructura_desde_genero(genero)
+#comentario

@@ -8,3 +8,5 @@ class Libro:
 
     def __str__(self):
         return f"{self.titulo} - {self.autor} ({self.genero})"
+
+    # comentario
