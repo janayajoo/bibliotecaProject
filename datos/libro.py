@@ -7,4 +7,6 @@ class Libro:
         self.isbn = isbn
 
     def __str__(self):
-        return f"'{self.titulo}' por {self.autor}, Género: {self.genero}, Año: {self.anio_publicacion}, ISBN: {self.isbn}"
+        return f"{self.titulo} - {self.autor} ({self.genero})"
+
+    # comentario

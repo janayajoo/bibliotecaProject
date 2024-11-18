@@ -27,6 +27,8 @@ class ArbolAVL:
     def _obtener_altura(self, nodo):
         return nodo.altura if nodo else 0
 
+    # comentario
+
     def _balancear(self, nodo):
         # Balancear nodo aquí...
         return nodo

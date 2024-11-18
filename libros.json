@@ -1,44 +1,86 @@
 [
     {
-        "titulo": "aa",
-        "autor": "a",
-        "genero": "a",
-        "anio_publicacion": 1,
-        "isbn": "1234"
+        "titulo": "la reina de nada ",
+        "autor": "3",
+        "genero": "3",
+        "anio_publicacion": 3,
+        "isbn": "3"
     },
     {
-        "titulo": "asas",
-        "autor": "as",
-        "genero": "as",
-        "anio_publicacion": 23,
+        "titulo": "ejemplo",
+        "autor": "4",
+        "genero": "4",
+        "anio_publicacion": 4,
+        "isbn": "4"
+    },
+    {
+        "titulo": "principe cruel",
+        "autor": "5",
+        "genero": "5",
+        "anio_publicacion": 5,
+        "isbn": "5"
+    },
+    {
+        "titulo": "vajda",
+        "autor": "carolina andujar ",
+        "genero": "misterio",
+        "anio_publicacion": 2016,
         "isbn": "123"
     },
     {
-        "titulo": "dsw",
-        "autor": "dewf",
-        "genero": "fdsw",
+        "titulo": "al rumbo voy",
+        "autor": "1",
+        "genero": "terror",
+        "anio_publicacion": 1,
+        "isbn": "124"
+    },
+    {
+        "titulo": "murcielaof",
+        "autor": "56",
+        "genero": "51",
+        "anio_publicacion": 15,
+        "isbn": "125"
+    },
+    {
+        "titulo": "s",
+        "autor": "s",
+        "genero": "Romantico",
         "anio_publicacion": 123,
-        "isbn": "111"
+        "isbn": "12"
     },
     {
-        "titulo": "a",
-        "autor": "a",
-        "genero": "a",
-        "anio_publicacion": 1233,
-        "isbn": "1"
+        "titulo": "sa",
+        "autor": "sa",
+        "genero": "Aventura",
+        "anio_publicacion": 12,
+        "isbn": "315"
     },
     {
-        "titulo": "ar",
-        "autor": "arr",
-        "genero": "ar",
-        "anio_publicacion": 5677,
-        "isbn": "567"
+        "titulo": "intento ",
+        "autor": "sas",
+        "genero": "Distopía",
+        "anio_publicacion": 25,
+        "isbn": "1256"
     },
     {
-        "titulo": "rey leon",
-        "autor": "autor rey leon",
-        "genero": "fantasia",
-        "anio_publicacion": 1990,
-        "isbn": "11111111"
+        "titulo": "ada",
+        "autor": "kjnak",
+        "genero": "Humor Negro",
+        "anio_publicacion": 125,
+        "isbn": "1263"
+    },
+    {
+        "titulo": "dasda",
+        "autor": "daas",
+        "genero": "Satírica",
+        "anio_publicacion": 12,
+        "isbn": "88"
+    },
+    {
+        "titulo": "Hola",
+        "autor": "hola",
+        "genero": "Terror",
+        "anio_publicacion": 125,
+        "isbn": "0"
     }
 ]
