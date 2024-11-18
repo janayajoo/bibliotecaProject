@@ -2,106 +2,153 @@
     {
         "titulo": "Cien años de soledad",
         "autor": "Gabriel García Márquez",
-        "genero": "Realismo mágico",
+        "genero": "Ciencia Ficción",
         "anio_publicacion": 1967,
-        "isbn": "978-3-16-148410-0"
+        "isbn": "978-3-16-148410-0",
+        "copias": 1
     },
     {
         "titulo": "1984",
         "autor": "George Orwell",
         "genero": "Distopía",
         "anio_publicacion": 1949,
-        "isbn": "978-0-452-28423-4"
+        "isbn": "978-0-452-28423-4",
+        "copias": 1
     },
     {
         "titulo": "Matar a un ruiseñor",
         "autor": "Harper Lee",
         "genero": "Ficción",
         "anio_publicacion": 1960,
-        "isbn": "978-0-06-112008-4"
+        "isbn": "978-0-06-112008-4",
+        "copias": 1
     },
     {
         "titulo": "Don Quijote de la Mancha",
         "autor": "Miguel de Cervantes",
         "genero": "Novela",
         "anio_publicacion": 1605,
-        "isbn": "978-84-376-0494-7"
+        "isbn": "978-84-376-0494-7",
+        "copias": 1
     },
     {
         "titulo": "El gran Gatsby",
         "autor": "F. Scott Fitzgerald",
         "genero": "Ficción",
         "anio_publicacion": 1925,
-        "isbn": "978-0-7432-7356-5"
+        "isbn": "978-0-7432-7356-5",
+        "copias": 1
     },
     {
         "titulo": "La sombra del viento",
         "autor": "Carlos Ruiz Zafón",
-        "genero": "Ficción histórica",
+        "genero": "Ficción",
         "anio_publicacion": 2001,
-        "isbn": "978-0-06-089871-1"
+        "isbn": "978-0-06-089871-1",
+        "copias": 1
     },
     {
         "titulo": "Orgullo y prejuicio",
         "autor": "Jane Austen",
-        "genero": "Romántico",
+        "genero": "Romántica",
         "anio_publicacion": 1813,
-        "isbn": "978-0-19-953556-9"
+        "isbn": "978-0-19-953556-9",
+        "copias": 1
     },
     {
         "titulo": "El código Da Vinci",
         "autor": "Dan Brown",
-        "genero": "Thriller",
+        "genero": "Psicológico",
         "anio_publicacion": 2003,
-        "isbn": "978-0-385-50420-8"
+        "isbn": "978-0-385-50420-8",
+        "copias": 1
     },
     {
         "titulo": "Harry Potter y la piedra filosofal",
         "autor": "J.K. Rowling",
-        "genero": "Fantasía",
+        "genero": "Ciencia Ficción",
         "anio_publicacion": 1997,
-        "isbn": "978-0-7475-3269-9"
+        "isbn": "978-0-7475-3269-9",
+        "copias": 1
     },
     {
         "titulo": "Los pilares de la Tierra",
         "autor": "Ken Follett",
         "genero": "Histórica",
         "anio_publicacion": 1989,
-        "isbn": "978-0-451-19147-7"
+        "isbn": "978-0-451-19147-7",
+        "copias": 1
     },
     {
         "titulo": "Crónica de una muerte anunciada",
         "autor": "Gabriel García Márquez",
         "genero": "Ficción",
         "anio_publicacion": 1981,
-        "isbn": "978-0-06-088328-1"
+        "isbn": "978-0-06-088328-1",
+        "copias": 1
     },
     {
         "titulo": "El alquimista",
         "autor": "Paulo Coelho",
-        "genero": "Ficción filosófica",
+        "genero": "Ficción",
         "anio_publicacion": 1988,
-        "isbn": "978-0-06-112241-5"
+        "isbn": "978-0-06-112241-5",
+        "copias": 1
     },
     {
         "titulo": "Cumbres borrascosas",
         "autor": "Emily Brontë",
-        "genero": "Gótico",
+        "genero": "Gore",
         "anio_publicacion": 1847,
-        "isbn": "978-0-14-143955-6"
+        "isbn": "978-0-14-143955-6",
+        "copias": 1
     },
     {
         "titulo": "Fahrenheit 451",
         "autor": "Ray Bradbury",
-        "genero": "Ciencia ficción",
+        "genero": "Ficción",
         "anio_publicacion": 1953,
-        "isbn": "978-0-345-34296-3"
+        "isbn": "978-0-345-34296-3",
+        "copias": 1
     },
     {
         "titulo": "El retrato de Dorian Gray",
         "autor": "Oscar Wilde",
-        "genero": "Ficción psicológica",
+        "genero": "Psicológico",
         "anio_publicacion": 1890,
-        "isbn": "978-0-14-143957-0"
+        "isbn": "978-0-14-143957-0",
+        "copias": 1
+    },
+    {
+        "titulo": "Fahrenheit 451",
+        "autor": "Ray Bradbury",
+        "genero": "Ficción",
+        "anio_publicacion": 1953,
+        "isbn": "978-0-345-34296-3",
+        "copias": 1
+    },
+    {
+        "titulo": "1984",
+        "autor": "George Orwell",
+        "genero": "Distopía",
+        "anio_publicacion": 1949,
+        "isbn": "978-0-452-28423-4",
+        "copias": 1
+    },
+    {
+        "titulo": "Los pilares de la Tierra",
+        "autor": "Ken Follett",
+        "genero": "Histórica",
+        "anio_publicacion": 1989,
+        "isbn": "978-0-451-19147-7",
+        "copias": 1
+    },
+    {
+        "titulo": "Orgullo y prejuicio",
+        "autor": "Jane Austen",
+        "genero": "Romántico",
+        "anio_publicacion": 1813,
+        "isbn": "978-0-19-953556-9",
+        "copias": 1
     }
 ]

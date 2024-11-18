@@ -76,7 +76,9 @@ class InterfazBiblioteca:
                         autor=dato['autor'],
                         genero=dato['genero'],
                         anio_publicacion=dato['anio_publicacion'],
-                        isbn=dato['isbn']
+                        isbn=dato['isbn'],
+                        copias = dato.get('copias', 1)  # Establece 'copias' a 1 si no está en los datos
+
                     )
                     self.libros.append(libro)
                     self.diccionario_libros[libro.isbn] = libro
@@ -252,7 +254,11 @@ class InterfazBiblioteca:
                 return
 
             if isbn in self.diccionario_libros:
-                messagebox.showerror("Error", "Ya existe un libro con este ISBN")
+                libro_existente = self.diccionario_libros[isbn]
+                libro_existente.aumentar_copias()
+                messagebox.showinfo("Información",
+                                    f"El libro '{libro_existente.titulo}' ahora tiene {libro_existente.copias} copias.")
+                self.actualizar_visualizaciones()
                 return
 
             libro = Libro(titulo, autor, genero, anio, isbn)
@@ -260,6 +266,7 @@ class InterfazBiblioteca:
             self.diccionario_libros[isbn] = libro
             self.arbol_binario.insertar(libro)
             self.arbol_nario.insertar(libro)
+
 
             self.guardar_en_json()
 
@@ -357,6 +364,7 @@ class InterfazBiblioteca:
                                         f"Género: {libro.genero}\n"
                                         f"Año: {libro.anio_publicacion}\n"
                                         f"ISBN: {libro.isbn}\n"
+                                        f"Copias: {libro.copias}\n"
                                         f"{'-' * 50}\n")
 
     def actualizar_arbol(self):
@@ -385,17 +393,17 @@ class InterfazBiblioteca:
 
     def crear_componentes_grafos(self):
         """Crear la pestaña de visualización de grafos."""
-        frame = ttk.Frame(self.tab_grafos, padding="7")
+        frame = ttk.Frame(self.tab_grafos, padding="4")
         frame.pack(fill='both', expand=True)
 
-        ttk.Label(frame, text="Visualización de Grafos de Libros", font=("Helvetica", 7, "bold")).pack(pady=3)
+        ttk.Label(frame, text="Visualización de Grafos de Libros", font=("Helvetica", 5, "bold")).pack(pady=3)
 
         # Frame para mostrar el grafo
         frame_grafo = ttk.Frame(frame)
         frame_grafo.pack(fill='both', expand=True)
 
         self.canvas_grafo = tk.Canvas(frame_grafo, bg="white")
-        self.canvas_grafo.pack(fill='both', expand=True, padx=5, pady=5)
+        self.canvas_grafo.pack(fill='both', expand=True, padx=2, pady=2)
 
         # Generar el grafo inmediatamente al cargar la pestaña
         self.mostrar_grafo()
@@ -441,9 +449,9 @@ class InterfazBiblioteca:
 
         # Crear figura para Matplotlib
         fig, ax = plt.subplots(figsize=(8, 6))
-        nx.draw_networkx_nodes(G, pos, ax=ax, node_color=colores, node_size=500)
+        nx.draw_networkx_nodes(G, pos, ax=ax, node_color=colores, node_size=300)
         nx.draw_networkx_edges(G, pos, ax=ax, edge_color="gray", width=1)
-        nx.draw_networkx_labels(G, pos, ax=ax, font_size=7, font_weight="bold")
+        nx.draw_networkx_labels(G, pos, ax=ax, font_size=5, font_weight="bold")
 
         # Configuración de visualización
         ax.set_title("Relaciones entre Libros y sus Atributos")
