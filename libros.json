@@ -1,23 +1,23 @@
 [
     {
         "titulo": "la reina de nada ",
-        "autor": "3",
-        "genero": "3",
-        "anio_publicacion": 3,
+        "autor": "autor",
+        "genero": "genero",
+        "anio_publicacion": 12345,
         "isbn": "3"
     },
     {
         "titulo": "ejemplo",
-        "autor": "4",
-        "genero": "4",
-        "anio_publicacion": 4,
+        "autor": "autor",
+        "genero": "genero",
+        "anio_publicacion": 12345,
         "isbn": "4"
     },
     {
         "titulo": "principe cruel",
-        "autor": "5",
-        "genero": "5",
-        "anio_publicacion": 5,
+        "autor": "autor",
+        "genero": "genero",
+        "anio_publicacion": 12345,
         "isbn": "5"
     },
     {
@@ -29,35 +29,35 @@
     },
     {
         "titulo": "al rumbo voy",
-        "autor": "1",
-        "genero": "terror",
-        "anio_publicacion": 1,
+        "autor": "autor",
+        "genero": "genero",
+        "anio_publicacion": 12345,
         "isbn": "124"
     },
     {
         "titulo": "murcielaof",
-        "autor": "56",
-        "genero": "51",
-        "anio_publicacion": 15,
+        "autor": "autor",
+        "genero": "genero",
+        "anio_publicacion": 12345,
         "isbn": "125"
     },
     {
         "titulo": "s",
-        "autor": "s",
+        "autor": "autor",
         "genero": "Romantico",
         "anio_publicacion": 123,
         "isbn": "12"
     },
     {
         "titulo": "sa",
-        "autor": "sa",
+        "autor": "autor",
         "genero": "Aventura",
         "anio_publicacion": 12,
         "isbn": "315"
     },
     {
         "titulo": "intento ",
-        "autor": "sas",
+        "autor": "autor",
         "genero": "Distopía",
         "anio_publicacion": 25,
         "isbn": "1256"
@@ -71,16 +71,16 @@
     },
     {
         "titulo": "dasda",
-        "autor": "daas",
+        "autor": "autor",
         "genero": "Satírica",
         "anio_publicacion": 12,
         "isbn": "88"
     },
     {
         "titulo": "Hola",
-        "autor": "hola",
-        "genero": "Terror",
-        "anio_publicacion": 125,
+        "autor": "autor",
+        "genero": "genero",
+        "anio_publicacion": 12345,
         "isbn": "0"
     }
 ]

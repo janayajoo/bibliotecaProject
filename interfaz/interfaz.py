@@ -5,12 +5,17 @@ import json
 from datos.binario import ArbolBinarioBusqueda
 from datos.nario import ArbolNArio
 
+import networkx as nx
+import matplotlib.pyplot as plt
+from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
+
+
 
 class InterfazBiblioteca:
     def __init__(self):
         self.raiz = tk.Tk()
         self.raiz.title("Sistema de Gestión de Biblioteca")
-        self.raiz.geometry("800x600")
+        self.raiz.geometry("1000x800")
 
         # Estructuras de datos
         self.libros = []
@@ -52,8 +57,14 @@ class InterfazBiblioteca:
         self.crear_componentes_arboles()
         self.crear_componentes_generos()
 
+        self.tab_grafos = ttk.Frame(self.notebook)
+        self.tab_grafos.pack(fill='both', expand=True)
+        self.notebook.add(self.tab_grafos, text="Visualización de Grafos")
+        self.crear_componentes_grafos()
+
         # Ejecutar la interfaz
         self.raiz.mainloop()
+
 
     def cargar_desde_json(self):
         try:
@@ -371,7 +382,85 @@ class InterfazBiblioteca:
         self.actualizar_arbol()
         self.actualizar_vista_arbol()
 
-    if __name__ == "__main__":
-        InterfazBiblioteca()
 
-#comentario
+    def crear_componentes_grafos(self):
+        """Crear la pestaña de visualización de grafos."""
+        frame = ttk.Frame(self.tab_grafos, padding="7")
+        frame.pack(fill='both', expand=True)
+
+        ttk.Label(frame, text="Visualización de Grafos de Libros", font=("Helvetica", 7, "bold")).pack(pady=3)
+
+        # Frame para mostrar el grafo
+        frame_grafo = ttk.Frame(frame)
+        frame_grafo.pack(fill='both', expand=True)
+
+        self.canvas_grafo = tk.Canvas(frame_grafo, bg="white")
+        self.canvas_grafo.pack(fill='both', expand=True, padx=5, pady=5)
+
+        # Generar el grafo inmediatamente al cargar la pestaña
+        self.mostrar_grafo()
+
+    def mostrar_grafo(self):
+        """Visualiza un grafo con nodos mejor separados."""
+        if not self.libros:
+            messagebox.showerror("Error", "No hay libros en el sistema.")
+            return
+
+        # Crear el grafo
+        G = nx.Graph()
+
+        # Añadir nodos y conexiones (libros y atributos)
+        for libro in self.libros:
+            # Nodo para el libro
+            G.add_node(libro.titulo, tipo="libro")
+
+            # Nodos para atributos y conexiones
+            G.add_node(libro.genero, tipo="genero")
+            G.add_edge(libro.titulo, libro.genero)
+
+            G.add_node(libro.autor, tipo="autor")
+            G.add_edge(libro.titulo, libro.autor)
+
+            G.add_node(libro.anio_publicacion, tipo="anio")
+            G.add_edge(libro.titulo, libro.anio_publicacion)
+
+        # Posicionar nodos con un mayor espaciado
+        pos = nx.spring_layout(G, seed=42, k=1)  # 'k' controla la distancia entre nodos
+
+        # Colores por tipo de nodo
+        colores = []
+        for nodo, datos in G.nodes(data=True):
+            if datos["tipo"] == "libro":
+                colores.append("skyblue")  # Libros en azul claro
+            elif datos["tipo"] == "genero":
+                colores.append("lightgreen")  # Género en verde claro
+            elif datos["tipo"] == "autor":
+                colores.append("lightcoral")  # Autor en rojo claro
+            elif datos["tipo"] == "anio":
+                colores.append("lightyellow")  # Año en amarillo claro
+
+        # Crear figura para Matplotlib
+        fig, ax = plt.subplots(figsize=(8, 6))
+        nx.draw_networkx_nodes(G, pos, ax=ax, node_color=colores, node_size=500)
+        nx.draw_networkx_edges(G, pos, ax=ax, edge_color="gray", width=1)
+        nx.draw_networkx_labels(G, pos, ax=ax, font_size=7, font_weight="bold")
+
+        # Configuración de visualización
+        ax.set_title("Relaciones entre Libros y sus Atributos")
+        ax.axis("off")  # Quitar ejes
+
+        # Crear la leyenda
+        import matplotlib.patches as mpatches
+        libro_patch = mpatches.Patch(color="skyblue", label="Libro (Título)")
+        genero_patch = mpatches.Patch(color="lightgreen", label="Género")
+        autor_patch = mpatches.Patch(color="lightcoral", label="Autor")
+        anio_patch = mpatches.Patch(color="lightyellow", label="Año de Publicación")
+
+        ax.legend(handles=[libro_patch, genero_patch, autor_patch, anio_patch], loc="upper right")
+
+        # Integrar Matplotlib con Tkinter para mostrar el grafo
+        canvas = FigureCanvasTkAgg(fig, master=self.canvas_grafo)
+        canvas.draw()
+        canvas.get_tk_widget().pack(fill="both", expand=True)
+        self.fig = fig  # Guardar referencia a la figura
+        plt.close(fig)
